@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	int sum=0,x=1,num;
+	printf("enter binary value :\n");
+	scanf("%d",&num);
+	
+	while(num>0)
+	{
+		int rem =num%10;
+		sum+=x*rem;
+		x*=8;
+		num=num/10;
+	}
+	printf("decimal value = %d",sum);
+return 0;
+}
